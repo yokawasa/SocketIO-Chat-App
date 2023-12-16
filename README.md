@@ -1,16 +1,17 @@
-## Welcome to Private and Public Chat Socket.IO App by Wilbert Muza ##
+## Socket.IO Chat App
 
-### Socket.IO Real-Time Chat with Auto Reply ### 
-   July, 2018 
+This project is a fork of the [wmuza/SocketIO-Chat-App](https://github.com/wmuza/SocketIO-Chat-App).
 
-![picture alt](https://wmuza.github.io/SocketIO-Chat-App/public/img/chat-app.PNG "Chat")
+### Socket.IO Real-Time Chat with Auto Reply 
+
+![picture alt](/public/img/chat-app.png)
    
-### FEATURING THE FASTEST AND MOST RELIABLE REAL-TIME ENGINE ###
+### FEATURING THE FASTEST AND MOST RELIABLE REAL-TIME ENGINE
 Real-Time Chat is powered by Socket.IO. is a web application that allows multiple users to have a private and public chat.
 This app allows one to one chat online and its fast and easy to use. Please note that the application code is written in Javascript ES6.
 
 
-### Prerequisites: ###
+### Prerequisites
   
   * Basics of Socket.IO [Socket.IO](https://socket.io/)
 
@@ -25,7 +26,7 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 1. Clone or Download the repository
 
 	```
-	$ git clone https://github.com/wmuza/SocketIO-Chat-App.git
+	$ git clone https://github.com/yokawasa/SocketIO-Chat-App.git
 	$ cd SocketIO-Chat-App
 	```
 2. Install Dependencies
@@ -41,6 +42,6 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 Your app should now be running on [localhost:3000](http://localhost:3000/).
 
   
-### Support or Contact ###
+### Support or Contact
 
 Having trouble with Pages? Feel free to post an issue

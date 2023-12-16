@@ -39,7 +39,7 @@ class MainChat  {
 	}
 		
 	static LoadEventHandlers() {
-			Fake = [ 'Hi there, I\'m Wilbert and you?', 'Nice to meet you', 'How are you?', 'Not too bad, thanks', 'What do you do?', 'That\'s awesome', 'Codepen is a nice place to stay', 'I think you\'re a nice person', 'Why do you think that?', 'Can you explain?', 'Anyway I\'ve gotta go now', 'It was a pleasure chat with you', 'Time to make a new codepen', 'Bye', ':)' ]
+			Fake = [ 'Hi there, I\'m ROBOT-KUN and you?', 'Nice to meet you', 'How are you?', 'Not too bad, thanks', 'What do you do?', 'That\'s awesome', 'Starbucks is a nice place to stay', 'I think you\'re a nice person', 'Why do you think that?', 'Can you explain?', 'Anyway I\'ve gotta go now', 'It was a pleasure chat with you', 'Time to make a new coffee', 'Bye', ':)' ]
 
 			$('.chat-title').on('click', () => {
 				if ( $('.chat').height() == 500 )
@@ -66,11 +66,11 @@ class MainChat  {
 			// listener, whenever the server emits 'updatechat', this updates the chat body
 			socket.on('updatechat',  (username, data) => {
 				if(username == 'Chat Bot'){
-					$('<div class="message loading new"><figure class="avatar"><img src="/public/img/sa.png" /></figure><span></span></div>').appendTo($('.mCSB_container'));
+					$('<div class="message loading new"><figure class="avatar"><img src="/public/img/robot.png" /></figure><span></span></div>').appendTo($('.mCSB_container'));
 					MainChat.updateScrollbar();
 					setTimeout( () => {
 					$('.message.loading').remove();
-					$('<div class="message new"><figure class="avatar"><img src="/public/img/sa.png" /></figure>' + data + '</div>').appendTo($('.mCSB_container')).addClass('new');
+					$('<div class="message new"><figure class="avatar"><img src="/public/img/robot.png" /></figure>' + data + '</div>').appendTo($('.mCSB_container')).addClass('new');
 						MainChat.setDate();
 						MainChat.updateScrollbar();
 					}, 1000 + (Math.random() * 20) * 100);
@@ -120,11 +120,11 @@ class MainChat  {
 	
 	static fakeMessage() {
 		if ($('.message-input').val() != '') return false;
-		$('<div class="message loading new"><figure class="avatar"><img src="/public/img/sa.png" /></figure><span></span></div>').appendTo($('.mCSB_container'));
+		$('<div class="message loading new"><figure class="avatar"><img src="/public/img/robot.png" /></figure><span></span></div>').appendTo($('.mCSB_container'));
 			MainChat.updateScrollbar();
 			setTimeout( () => {
 					$('.message.loading').remove();
-					$('<div class="message new"><figure class="avatar"><img src="/public/img/sa.png" /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
+					$('<div class="message new"><figure class="avatar"><img src="/public/img/robot.png" /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
 						MainChat.setDate();
 						MainChat.updateScrollbar();
 						i++;
